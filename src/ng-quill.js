@@ -46,7 +46,9 @@
                 'font',
                 'size',
                 'bullet',
-                'list'
+                'list',
+                'superscript',
+                'subscript'
             ],
             // default translations
             translations: {
@@ -77,7 +79,9 @@
                 cancel: 'Cancel',
                 remove: 'Remove',
                 insert: 'Insert',
-                preview: 'Preview'
+                preview: 'Preview',
+                superscript: 'Superscript',
+                subscript: 'Subscript'
             }
         };
 
@@ -300,11 +304,13 @@
                                     '<option ng-repeat="option in fontsizeOptions" ng-selected="$index === 1" value="{{option.size}}">{{dict[option.alias] || option.alias}}</option>' +
                                 '</select>' +
                             '</span>' +
-                            '<span class="ql-format-group" ng-if="shouldShow([\'bold\', \'italic\', \'underline\', \'strike\'])">' +
+                            '<span class="ql-format-group" ng-if="shouldShow([\'bold\', \'italic\', \'underline\', \'strike\', \'superscript\', \'subscript\'])">' +
                                 '<span title="{{dict.bold}}" class="ql-format-button ql-bold" ng-if="shouldShow([\'bold\'])"></span>' +
                                 '<span title="{{dict.italic}}" class="ql-format-button ql-italic" ng-if="shouldShow([\'italic\'])"></span>' +
                                 '<span title="{{dict.underline}}" class="ql-format-button ql-underline" ng-if="shouldShow([\'underline\'])"></span>' +
                                 '<span title="{{dict.strike}}" class="ql-format-button ql-strike" ng-if="shouldShow([\'strike\'])"></span>' +
+                                '<span title="{{dict.superscript}}" class="ql-format-button ql-superscript" ng-if="shouldShow([\'superscript\'])"></span>' +
+                                '<span title="{{dict.subscript}}" class="ql-format-button ql-subscript" ng-if="shouldShow([\'subscript\'])"></span>' +
                             '</span>' +
                             '<span class="ql-format-group" ng-if="shouldShow([\'color\', \'background\'])">' +
                                 '<select title="{{dict.textColor}}" class="ql-color" ng-if="shouldShow([\'color\'])">' +
