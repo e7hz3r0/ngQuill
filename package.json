@@ -1,6 +1,6 @@
 {
   "name": "ng-quill",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Angular directive for rich text editor Quill",
   "author": "Bengt Weiße <bengtler@gmail.com>",
   "homepage": "https://github.com/KillerCodeMonkey/ngQuill",
@@ -19,10 +19,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KillerCodeMonkey/ngQuill"
+    "url": "https://github.com/e7hz3r0/ngQuill"
   },
   "bugs": {
-    "url": "https://github.com/KillerCodeMonkey/ngQuill/issues"
+    "url": "https://github.com/e7hz3r0/ngQuill/issues"
   },
   "keywords": [
     "editor",
